@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+import WaveDivider from "@/components/WaveDivider";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
@@ -212,8 +213,8 @@ export default function MentionsLegalesPage() {
         </div>
       </section>
 
-      {/* Gradient transition to footer */}
-      <div className="h-24 bg-gradient-to-b from-white to-neutral-900" />
+      {/* Wave transition to footer */}
+      <WaveDivider color="#171717" flip className="bg-white" />
     </>
   );
 }

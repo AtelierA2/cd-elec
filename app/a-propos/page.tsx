@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import CtaSection from "@/components/CtaSection";
+import WaveDivider from "@/components/WaveDivider";
 import {
   Award,
   Users,
@@ -157,13 +158,11 @@ export default function AProposPage() {
       </section>
 
       {/* Diplôme Excellence Artisanale */}
-      <section className="relative pt-24 md:pt-32 pb-24 md:pb-32 bg-gradient-to-br from-primary-900 via-primary to-primary-700">
+      <section className="relative bg-gradient-to-br from-primary-900 via-primary to-primary-700">
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-        {/* Gradient fade from white */}
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
-        {/* Gradient fade to white */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
-        <div className="container-custom relative">
+        {/* Wave: white curves into the dark section */}
+        <WaveDivider color="#ffffff" flip className="relative z-10" />
+        <div className="container-custom relative py-16 md:py-24">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
               <div className="relative mx-auto max-w-md">
@@ -213,6 +212,8 @@ export default function AProposPage() {
             </div>
           </div>
         </div>
+        {/* Wave: dark section curves back to white */}
+        <WaveDivider color="#ffffff" className="relative z-10" />
       </section>
 
       {/* Certifications Section */}

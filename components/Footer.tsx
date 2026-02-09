@@ -23,9 +23,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-neutral-900 text-neutral-300">
-      {/* Gradient fade from CTA section */}
-      <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-neutral-800 to-transparent" />
+    <footer className="bg-neutral-900 text-neutral-300">
       <div className="container-custom section-padding">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}

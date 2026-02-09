@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
+import WaveDivider from "@/components/WaveDivider";
 
 interface CtaSectionProps {
   title: string;
@@ -16,10 +17,9 @@ export default function CtaSection({
   primaryHref = "/contact",
 }: CtaSectionProps) {
   return (
-    <section className="relative bg-neutral-800 pt-24 md:pt-28 pb-16 md:pb-20">
-      {/* Gradient fade from white */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white to-transparent" />
-      <div className="container-custom relative text-center">
+    <section className="relative bg-neutral-800">
+      <WaveDivider color="#262626" flip className="bg-white" />
+      <div className="container-custom text-center py-16 md:py-20">
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
           {title}
         </h2>

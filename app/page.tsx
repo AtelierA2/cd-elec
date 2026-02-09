@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import CtaSection from "@/components/CtaSection";
+import WaveDivider from "@/components/WaveDivider";
 import {
   Zap,
   Wrench,
@@ -71,7 +72,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-700 pb-32 md:pb-40">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-700">
         <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
         <div className="container-custom relative py-20 md:py-32">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -149,8 +150,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Gradient fade to white */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+        <WaveDivider color="#ffffff" />
       </section>
 
       {/* Services Section */}
