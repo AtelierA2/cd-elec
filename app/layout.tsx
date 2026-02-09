@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     template: "%s | CD-ELEC",
   },
   icons: {
-    icon: "/images/CD_ELEC_LOGO_PICTO.png",
-    shortcut: "/images/CD_ELEC_LOGO_PICTO.png",
-    apple: "/images/CD_ELEC_LOGO_PICTO.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   description:
     "CD-ELEC, votre électricien professionnel à Saïx et Castres dans le Tarn (81). Installation électrique, rénovation, mise aux normes NF C 15-100, dépannage urgent 7j/7. Devis gratuit au 06 08 27 49 02.",
