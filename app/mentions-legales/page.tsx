@@ -211,6 +211,9 @@ export default function MentionsLegalesPage() {
           </div>
         </div>
       </section>
+
+      {/* Gradient transition to footer */}
+      <div className="h-24 bg-gradient-to-b from-white to-neutral-900" />
     </>
   );
 }

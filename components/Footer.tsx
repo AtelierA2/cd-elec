@@ -23,7 +23,9 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-neutral-300">
+    <footer className="relative bg-neutral-900 text-neutral-300">
+      {/* Gradient fade from CTA section */}
+      <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-neutral-800 to-transparent" />
       <div className="container-custom section-padding">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
@@ -136,6 +138,19 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-sm">
             <span>Zone d&apos;intervention : Saïx, Castres et le Tarn (81)</span>
           </div>
+        </div>
+        <div className="mt-4 text-center">
+          <p className="text-xs text-neutral-500">
+            Site réalisé par{" "}
+            <a
+              href="https://ateliera2.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-400 transition-colors hover:text-white"
+            >
+              ateliera2.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>

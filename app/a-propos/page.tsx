@@ -157,8 +157,12 @@ export default function AProposPage() {
       </section>
 
       {/* Diplôme Excellence Artisanale */}
-      <section className="relative section-padding bg-gradient-to-br from-primary-900 via-primary to-primary-700">
+      <section className="relative pt-24 md:pt-32 pb-24 md:pb-32 bg-gradient-to-br from-primary-900 via-primary to-primary-700">
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
+        {/* Gradient fade from white */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
+        {/* Gradient fade to white */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
         <div className="container-custom relative">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="order-2 lg:order-1">
