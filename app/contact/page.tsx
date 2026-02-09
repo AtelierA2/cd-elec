@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import HeroSection from "@/components/HeroSection";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -87,6 +88,8 @@ const contactInfo = [
   },
 ];
 
+const faqItems = faqSchema.mainEntity;
+
 export default function ContactPage() {
   return (
     <>
@@ -96,21 +99,10 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary to-primary-700 py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-        <div className="container-custom relative">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-              Contactez-nous
-            </h1>
-            <p className="text-lg text-primary-100 md:text-xl">
-              Un projet électrique ? Une question ? Contactez-nous pour obtenir
-              un devis gratuit et personnalisé sous 48h.
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="Contactez-nous"
+        description="Un projet électrique ? Une question ? Contactez-nous pour obtenir un devis gratuit et personnalisé sous 48h."
+      />
 
       {/* Contact Section */}
       <section className="section-padding bg-white">
@@ -185,46 +177,16 @@ export default function ContactPage() {
               Questions fréquentes
             </h2>
             <div className="space-y-6">
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 font-semibold text-neutral-900">
-                  Le devis est-il gratuit ?
-                </h3>
-                <p className="text-neutral-600">
-                  Oui, le devis est entièrement gratuit et sans engagement. Nous
-                  nous déplaçons pour évaluer vos besoins et vous proposer une
-                  solution adaptée.
-                </p>
-              </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 font-semibold text-neutral-900">
-                  Dans quels délais pouvez-vous intervenir ?
-                </h3>
-                <p className="text-neutral-600">
-                  Pour un dépannage urgent, nous intervenons généralement dans la
-                  journée ou sous 24h. Pour les travaux planifiés, nous
-                  définissons ensemble le calendrier qui vous convient.
-                </p>
-              </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 font-semibold text-neutral-900">
-                  Intervenez-vous chez les professionnels ?
-                </h3>
-                <p className="text-neutral-600">
-                  Oui, nous intervenons aussi bien chez les particuliers que chez
-                  les professionnels : commerces, bureaux, locaux industriels,
-                  etc.
-                </p>
-              </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm">
-                <h3 className="mb-2 font-semibold text-neutral-900">
-                  Proposez-vous des facilités de paiement ?
-                </h3>
-                <p className="text-neutral-600">
-                  Nous acceptons différents modes de paiement : chèque, virement,
-                  espèces. Pour les travaux importants, un échelonnement peut être
-                  envisagé. Contactez-nous pour en discuter.
-                </p>
-              </div>
+              {faqItems.map((faq) => (
+                <div key={faq.name} className="rounded-xl bg-white p-6 shadow-sm">
+                  <h3 className="mb-2 font-semibold text-neutral-900">
+                    {faq.name}
+                  </h3>
+                  <p className="text-neutral-600">
+                    {faq.acceptedAnswer.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

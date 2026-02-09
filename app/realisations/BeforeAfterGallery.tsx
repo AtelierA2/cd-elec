@@ -58,7 +58,8 @@ const BeforeAfterSlider = ({
         fill
         className="object-cover pointer-events-none"
         sizes="(max-width: 768px) 100vw, 50vw"
-        priority
+        loading="lazy"
+        quality={75}
       />
 
       {/* Image Avant (au-dessus, clippée) */}
@@ -72,7 +73,8 @@ const BeforeAfterSlider = ({
           fill
           className="object-cover pointer-events-none"
           sizes="(max-width: 768px) 100vw, 50vw"
-          priority
+          loading="lazy"
+          quality={75}
         />
       </div>
 
@@ -477,6 +479,8 @@ const ThumbnailStrip = ({
               width={56}
               height={56}
               className="h-full w-full object-cover"
+              loading="lazy"
+              quality={50}
             />
           </button>
         ))}
@@ -572,20 +576,28 @@ export default function BeforeAfterGallery() {
                 <>
                   {/* Images Preview - Normal Layout */}
                   <div className="relative aspect-[4/3] overflow-hidden bg-neutral-900">
-                    {/* Preload all images but only show current */}
-                    {project.images.map((img, i) => (
-                      <Image
-                        key={i}
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        className={`object-contain transition-opacity duration-300 ${
-                          i === currentIndex ? "opacity-100" : "opacity-0"
-                        }`}
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        priority={i === 0}
-                      />
-                    ))}
+                    {/* Only render current and adjacent images for performance */}
+                    {project.images.map((img, i) => {
+                      const isVisible = i === currentIndex;
+                      const isAdjacent = Math.abs(i - currentIndex) <= 1 ||
+                        (currentIndex === 0 && i === project.images.length - 1) ||
+                        (currentIndex === project.images.length - 1 && i === 0);
+                      if (!isVisible && !isAdjacent) return null;
+                      return (
+                        <Image
+                          key={i}
+                          src={img.src}
+                          alt={img.alt}
+                          fill
+                          className={`object-contain transition-opacity duration-300 ${
+                            isVisible ? "opacity-100" : "opacity-0"
+                          }`}
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          loading="lazy"
+                          quality={75}
+                        />
+                      );
+                    })}
 
                     {/* Navigation arrows */}
                     {project.images.length > 1 && (

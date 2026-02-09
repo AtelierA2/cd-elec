@@ -25,18 +25,10 @@ const config: Config = {
           800: "#991b1b",
           900: "#7f1d1d",
         },
+        // accent maps to primary for consistency
         accent: {
           DEFAULT: "#c2212b",
-          50: "#fef2f2",
-          100: "#fee2e2",
-          200: "#fecaca",
-          300: "#fca5a5",
-          400: "#f87171",
           500: "#ef4444",
-          600: "#dc2626",
-          700: "#c2212b",
-          800: "#991b1b",
-          900: "#7f1d1d",
         },
         neutral: {
           DEFAULT: "#F8FAFC",
@@ -53,7 +45,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",

@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/HeroSection";
+import CtaSection from "@/components/CtaSection";
 import {
-  Phone,
-  ArrowRight,
   Award,
   Users,
   ShieldCheck,
@@ -65,21 +63,10 @@ const certifications = [
 export default function AProposPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary to-primary-700 py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-        <div className="container-custom relative">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-              À propos de CD-ELEC
-            </h1>
-            <p className="text-lg text-primary-100 md:text-xl">
-              Votre électricien de confiance à Saïx et Castres depuis plus de 40
-              ans. Découvrez notre histoire et nos engagements.
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title="À propos de CD-ELEC"
+        description="Votre électricien de confiance à Saïx et Castres depuis plus de 40 ans. Découvrez notre histoire et nos engagements."
+      />
 
       {/* About Section */}
       <section className="section-padding bg-white">
@@ -125,6 +112,8 @@ export default function AProposPage() {
                   alt="Didier Cabaret - Électricien CD-ELEC au travail"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 text-white shadow-xl">
@@ -181,6 +170,8 @@ export default function AProposPage() {
                     width={600}
                     height={800}
                     className="w-full h-auto rounded-lg"
+                    loading="lazy"
+                    quality={75}
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-amber-400 flex items-center justify-center shadow-lg">
@@ -303,37 +294,11 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-neutral-800 py-16 md:py-20">
-        <div className="container-custom text-center">
-          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-            Faisons connaissance !
-          </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-neutral-300">
-            Vous avez un projet électrique ? Contactez-moi pour en discuter.
-            Premier rendez-vous et devis gratuits.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" asChild>
-              <Link href="/contact">
-                Me contacter
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-neutral-900"
-              asChild
-            >
-              <a href="tel:0608274902">
-                <Phone className="mr-2 h-5 w-5" />
-                06 08 27 49 02
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CtaSection
+        title="Faisons connaissance !"
+        description="Vous avez un projet électrique ? Contactez-moi pour en discuter. Premier rendez-vous et devis gratuits."
+        primaryLabel="Me contacter"
+      />
     </>
   );
 }

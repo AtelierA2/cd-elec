@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import HeroSection from "@/components/HeroSection";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
@@ -17,17 +18,7 @@ export const metadata: Metadata = {
 export default function MentionsLegalesPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary to-primary-700 py-16 md:py-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-        <div className="container-custom relative">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold text-white md:text-5xl">
-              Mentions légales
-            </h1>
-          </div>
-        </div>
-      </section>
+      <HeroSection title="Mentions légales" />
 
       {/* Content Section */}
       <section className="section-padding bg-white">

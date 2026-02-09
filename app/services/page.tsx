@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/HeroSection";
+import CtaSection from "@/components/CtaSection";
 import {
   Zap,
   Wrench,
@@ -9,7 +11,6 @@ import {
   AlertTriangle,
   LayoutGrid,
   Lightbulb,
-  Phone,
   ArrowRight,
   CheckCircle2,
   Home,
@@ -29,6 +30,79 @@ export const metadata: Metadata = {
     description:
       "Installation, rénovation, mise aux normes, dépannage électrique. Électricien professionnel à Saïx et Castres.",
   },
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Service",
+        name: "Installation électrique",
+        description: "Installation électrique complète pour constructions neuves et extensions. Respect des normes NF C 15-100.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Service",
+        name: "Rénovation électrique",
+        description: "Modernisation de votre installation existante pour plus de sécurité et de confort.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
+        name: "Mise aux normes NF C 15-100",
+        description: "Diagnostic et mise en conformité de votre installation électrique.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Service",
+        name: "Dépannage électrique",
+        description: "Intervention rapide pour tous vos problèmes électriques urgents.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Service",
+        name: "Tableau électrique",
+        description: "Installation et remplacement de tableaux électriques aux normes actuelles.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 6,
+      item: {
+        "@type": "Service",
+        name: "Éclairage",
+        description: "Solutions d'éclairage intérieur et extérieur, LED, domotique.",
+        provider: { "@type": "LocalBusiness", name: "CD-ELEC" },
+        areaServed: { "@type": "AdministrativeArea", name: "Tarn (81)" },
+      },
+    },
+  ],
 };
 
 const services = [
@@ -159,29 +233,23 @@ const clientTypes = [
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary to-primary-700 py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-        <div className="container-custom relative">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-              Nos services électriques
-            </h1>
-            <p className="text-lg text-primary-100 md:text-xl">
-              Des solutions complètes pour tous vos besoins en électricité,
-              réalisées par un professionnel qualifié dans le respect des normes
-              en vigueur.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Schema.org Services */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
+
+      <HeroSection
+        title="Nos services électriques"
+        description="Des solutions complètes pour tous vos besoins en électricité, réalisées par un professionnel qualifié dans le respect des normes en vigueur."
+      />
 
       {/* Services List */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="space-y-24">
             {services.map((service, index) => (
-              <div
+              <article
                 key={service.id}
                 id={service.id}
                 className="scroll-mt-24"
@@ -225,11 +293,12 @@ export default function ServicesPage() {
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 50vw"
                         loading={index === 0 ? "eager" : "lazy"}
+                        quality={80}
                       />
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -266,37 +335,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-neutral-800 py-16 md:py-20">
-        <div className="container-custom text-center">
-          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-            Un projet électrique ?
-          </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-neutral-300">
-            Contactez-nous pour discuter de votre projet. Nous vous proposons un
-            devis gratuit et détaillé sous 48h.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" asChild>
-              <Link href="/contact">
-                Demander un devis gratuit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-neutral-900"
-              asChild
-            >
-              <a href="tel:0608274902">
-                <Phone className="mr-2 h-5 w-5" />
-                06 08 27 49 02
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CtaSection
+        title="Un projet électrique ?"
+        description="Contactez-nous pour discuter de votre projet. Nous vous proposons un devis gratuit et détaillé sous 48h."
+      />
     </>
   );
 }
