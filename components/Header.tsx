@@ -21,7 +21,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-50 w-full bg-white/95 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <nav className="container-custom" aria-label="Navigation principale">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -85,7 +85,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="border-t border-neutral-200 py-4 md:hidden">
+          <div className="py-4 md:hidden">
             <div className="flex flex-col space-y-1">
               {navigation.map((item) => (
                 <Link
@@ -102,7 +102,7 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <div className="mt-4 flex flex-col gap-3 px-4 pt-4 border-t border-neutral-200">
+              <div className="mt-4 flex flex-col gap-3 px-4 pt-4">
                 <a
                   href="tel:0608274902"
                   className="flex items-center gap-2 text-base font-medium text-primary"

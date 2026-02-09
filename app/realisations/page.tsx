@@ -33,7 +33,7 @@ export default function RealisationsPage() {
       </section>
 
       {/* Info Section */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">
@@ -45,15 +45,15 @@ export default function RealisationsPage() {
               intervention est réalisée avec soin pour un résultat durable.
             </p>
             <div className="grid gap-6 sm:grid-cols-3">
-              <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="rounded-2xl bg-neutral-50 p-6">
                 <p className="text-3xl font-bold text-primary">100%</p>
                 <p className="text-sm text-neutral-600">Conformité normes</p>
               </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="rounded-2xl bg-neutral-50 p-6">
                 <p className="text-3xl font-bold text-primary">+200</p>
                 <p className="text-sm text-neutral-600">Chantiers réalisés</p>
               </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="rounded-2xl bg-neutral-50 p-6">
                 <p className="text-3xl font-bold text-primary">40 ans</p>
                 <p className="text-sm text-neutral-600">D&apos;expérience</p>
               </div>

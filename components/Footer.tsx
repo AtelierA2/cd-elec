@@ -129,7 +129,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-neutral-800 pt-8 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 pt-8 md:flex-row">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} CD-ELEC. Tous droits réservés.
           </p>

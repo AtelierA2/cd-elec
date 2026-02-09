@@ -126,7 +126,7 @@ export default function AProposPage() {
       </section>
 
       {/* Values Section */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">
@@ -141,7 +141,7 @@ export default function AProposPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-xl bg-white p-6 text-center shadow-sm"
+                className="rounded-2xl bg-neutral-50 p-6 text-center"
               >
                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary-50 text-primary">
                   <value.icon className="h-7 w-7" />
@@ -235,7 +235,7 @@ export default function AProposPage() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-xl bg-neutral-50 p-8">
+            <div className="rounded-2xl bg-neutral-50 p-8">
               <h3 className="mb-4 text-xl font-semibold text-neutral-900">
                 La norme NF C 15-100
               </h3>
@@ -256,7 +256,7 @@ export default function AProposPage() {
       </section>
 
       {/* Zone d'intervention */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">
@@ -267,7 +267,7 @@ export default function AProposPage() {
               travaux électriques. Que vous soyez à Castres, Mazamet,
               Labruguière ou ailleurs dans le Tarn, je me déplace chez vous.
             </p>
-            <div className="rounded-xl bg-white p-8 shadow-sm">
+            <div className="rounded-2xl bg-neutral-50 p-8">
               <div className="grid gap-4 text-left sm:grid-cols-2 md:grid-cols-3">
                 {[
                   "Saïx",

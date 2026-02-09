@@ -305,7 +305,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Client Types */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">
@@ -320,7 +320,7 @@ export default function ServicesPage() {
             {clientTypes.map((type) => (
               <div
                 key={type.title}
-                className="rounded-xl bg-white p-8 text-center shadow-sm"
+                className="rounded-2xl bg-neutral-50 p-8 text-center"
               >
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-50 text-primary">
                   <type.icon className="h-8 w-8" />

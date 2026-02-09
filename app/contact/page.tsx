@@ -134,7 +134,7 @@ export default function ContactPage() {
                 {contactInfo.map((info) => (
                   <div
                     key={info.title}
-                    className="rounded-xl border border-neutral-200 bg-neutral-50 p-6"
+                    className="rounded-2xl bg-neutral-50/70 p-6"
                   >
                     <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-50 text-primary">
                       <info.icon className="h-6 w-6" />
@@ -170,7 +170,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto max-w-3xl">
             <h2 className="mb-8 text-center text-3xl font-bold text-neutral-900">
@@ -178,7 +178,7 @@ export default function ContactPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map((faq) => (
-                <div key={faq.name} className="rounded-xl bg-white p-6 shadow-sm">
+                <div key={faq.name} className="rounded-2xl bg-neutral-50 p-6">
                   <h3 className="mb-2 font-semibold text-neutral-900">
                     {faq.name}
                   </h3>

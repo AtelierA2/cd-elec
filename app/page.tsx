@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative">
@@ -259,7 +259,7 @@ export default function Home() {
       </section>
 
       {/* Zone d'intervention */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-3xl font-bold text-neutral-900 md:text-4xl">
@@ -273,7 +273,7 @@ export default function Home() {
               {zones.map((zone) => (
                 <span
                   key={zone}
-                  className="rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 shadow-sm"
+                  className="rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700"
                 >
                   {zone}
                 </span>
