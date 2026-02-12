@@ -192,7 +192,7 @@ export default function AProposPage() {
               </h2>
               <p className="mb-6 text-lg text-primary-100">
                 Didier Cabaret est fier d&apos;avoir reçu le <strong className="text-white">Diplôme de l&apos;Excellence Artisanale</strong>,
-                une distinction décernée par la Chambre des Métiers et de l&apos;Artisanat du Val d&apos;Oise.
+                une distinction décernée par la Chambre des Métiers.
               </p>
               <p className="mb-6 text-primary-100">
                 Cette reconnaissance récompense notre engagement envers la qualité,
