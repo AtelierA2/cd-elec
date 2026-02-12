@@ -75,7 +75,21 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-700">
         <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
         <div className="container-custom relative py-20 md:py-32">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="relative grid items-center gap-12 lg:grid-cols-2">
+            {/* Photo Didier - positionnée entre les deux colonnes */}
+            <div className="absolute right-[calc(50%+1.5rem)] top-0 z-10 hidden lg:block">
+              <div className="h-20 w-20 overflow-hidden rounded-full shadow-lg">
+                <Image
+                  src="/images/didier_tete.png"
+                  alt="Didier Cabaret - Gérant CD-ELEC"
+                  width={80}
+                  height={80}
+                  className="h-full w-full object-cover"
+                  priority
+                  quality={85}
+                />
+              </div>
+            </div>
             <div className="text-center lg:text-left">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-sm">
                 <MapPin className="h-4 w-4" />
@@ -125,19 +139,6 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="absolute -left-24 top-6 z-10">
-                <div className="h-20 w-20 overflow-hidden rounded-full shadow-lg">
-                  <Image
-                    src="/images/didier_tete.png"
-                    alt="Didier Cabaret - Gérant CD-ELEC"
-                    width={80}
-                    height={80}
-                    className="h-full w-full object-cover"
-                    priority
-                    quality={85}
-                  />
-                </div>
-              </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-white/10 backdrop-blur-sm">
                 <Image
                   src="/images/camionnette.JPG"
