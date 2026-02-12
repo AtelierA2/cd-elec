@@ -21,201 +21,281 @@ export default function MentionsLegalesPage() {
     <>
       <HeroSection title="Mentions légales" />
 
-      {/* Content Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="mx-auto max-w-3xl">
-            <div className="prose prose-neutral max-w-none">
-              <h2>1. Éditeur du site</h2>
-              <p>Le site cdelec.fr est édité par :</p>
-              <ul>
-                <li>
+          <div className="mx-auto max-w-3xl space-y-12">
+
+            {/* 1. Éditeur du site */}
+            <div className="rounded-2xl bg-neutral-50 p-8">
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">
+                1. Éditeur du site
+              </h2>
+              <p className="mb-4 text-neutral-600">
+                Le site cdelec.fr est édité par :
+              </p>
+              <div className="space-y-2 text-neutral-700">
+                <p>
                   <strong>Raison sociale :</strong> CD-ELEC
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong>Forme juridique :</strong> Entreprise individuelle
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong>Gérant :</strong> Didier Cabaret
-                </li>
-                <li>
-                  <strong>Adresse :</strong> 534 Chemin de Rouquette, 81710 Saïx,
-                  France
-                </li>
-                <li>
+                </p>
+                <p>
+                  <strong>Adresse :</strong> 534 Chemin de Rouquette, 81710 Saïx, France
+                </p>
+                <p>
                   <strong>Téléphone :</strong>{" "}
-                  <a href="tel:0608274902">06 08 27 49 02</a>
-                </li>
-                <li>
+                  <a href="tel:0608274902" className="text-primary hover:underline">06 08 27 49 02</a>
+                </p>
+                <p>
                   <strong>Email :</strong>{" "}
-                  <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a>
-                </li>
-                <li>
+                  <a href="mailto:contact@cdelec.fr" className="text-primary hover:underline">contact@cdelec.fr</a>
+                </p>
+                <p>
                   <strong>SIRET :</strong> [Numéro SIRET à renseigner]
-                </li>
-                <li>
-                  <strong>Code APE :</strong> 4321A - Travaux d&apos;installation
-                  électrique dans tous locaux
-                </li>
-              </ul>
+                </p>
+                <p>
+                  <strong>Code APE :</strong> 4321A — Travaux d&apos;installation électrique dans tous locaux
+                </p>
+              </div>
+            </div>
 
-              <h2>2. Hébergement</h2>
-              <p>Ce site est hébergé par :</p>
-              <ul>
-                <li>
+            {/* 2. Hébergement */}
+            <div className="rounded-2xl bg-neutral-50 p-8">
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">
+                2. Hébergement
+              </h2>
+              <p className="mb-4 text-neutral-600">
+                Ce site est hébergé par :
+              </p>
+              <div className="space-y-2 text-neutral-700">
+                <p>
                   <strong>Hébergeur :</strong> Vercel Inc.
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong>Adresse :</strong> 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis
-                </li>
-                <li>
+                </p>
+                <p>
                   <strong>Site web :</strong>{" "}
-                  <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">vercel.com</a>
-                </li>
-              </ul>
+                  <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">vercel.com</a>
+                </p>
+              </div>
+            </div>
 
-              <h2>3. Conception du site</h2>
-              <p>Ce site a été conçu et réalisé par :</p>
-              <ul>
-                <li>
+            {/* 3. Conception du site */}
+            <div className="rounded-2xl bg-neutral-50 p-8">
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">
+                3. Conception du site
+              </h2>
+              <p className="mb-4 text-neutral-600">
+                Ce site a été conçu et réalisé par :
+              </p>
+              <div className="space-y-2 text-neutral-700">
+                <p>
                   <strong>Agence :</strong>{" "}
-                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer" title="Création de site web Tarn - Ateliera2">Atelier A2</a>
-                </li>
-                <li>
+                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer" title="Création de site web Tarn - Ateliera2" className="text-primary hover:underline">Atelier A2</a>
+                </p>
+                <p>
                   <strong>Site web :</strong>{" "}
-                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer">ateliera2.com</a>
-                </li>
-              </ul>
+                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ateliera2.com</a>
+                </p>
+              </div>
+            </div>
 
-              <h2>4. Propriété intellectuelle</h2>
-              <p>
-                L&apos;ensemble du contenu de ce site (textes, images, logos,
-                graphismes, etc.) est la propriété exclusive de CD-ELEC, sauf
-                mention contraire.
+            {/* 4. Propriété intellectuelle */}
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-neutral-900">
+                4. Propriété intellectuelle
+              </h2>
+              <p className="mb-3 text-neutral-600">
+                L&apos;ensemble du contenu de ce site (textes, images, logos, graphismes, etc.)
+                est la propriété exclusive de CD-ELEC, sauf mention contraire.
               </p>
-              <p>
-                Toute reproduction, représentation, modification, publication,
-                adaptation de tout ou partie des éléments du site, quel que soit
-                le moyen ou le procédé utilisé, est interdite, sauf autorisation
-                écrite préalable de CD-ELEC.
-              </p>
-
-              <h2>5. Protection des données personnelles</h2>
-              <h3>5.1 Collecte des données</h3>
-              <p>
-                Les données personnelles collectées sur ce site (nom, prénom,
-                email, téléphone, message) le sont uniquement dans le cadre de
-                demandes de contact ou de devis. Ces données sont destinées
-                exclusivement à CD-ELEC et ne sont en aucun cas transmises à des
-                tiers.
-              </p>
-
-              <h3>5.2 Durée de conservation</h3>
-              <p>
-                Les données personnelles sont conservées pendant une durée
-                maximale de 3 ans à compter du dernier contact avec la personne
-                concernée.
-              </p>
-
-              <h3>5.3 Droits des utilisateurs</h3>
-              <p>
-                Conformément au Règlement Général sur la Protection des Données
-                (RGPD), vous disposez des droits suivants concernant vos données
-                personnelles :
-              </p>
-              <ul>
-                <li>Droit d&apos;accès</li>
-                <li>Droit de rectification</li>
-                <li>Droit à l&apos;effacement</li>
-                <li>Droit à la limitation du traitement</li>
-                <li>Droit à la portabilité</li>
-                <li>Droit d&apos;opposition</li>
-              </ul>
-              <p>
-                Pour exercer ces droits, vous pouvez nous contacter par email à{" "}
-                <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a> ou par
-                courrier à l&apos;adresse indiquée ci-dessus.
-              </p>
-
-              <h3>5.4 Responsable du traitement</h3>
-              <p>
-                Le responsable du traitement des données personnelles est Didier
-                Cabaret, gérant de CD-ELEC.
-              </p>
-
-              <h2>6. Cookies</h2>
-              <p>
-                Ce site peut utiliser des cookies pour améliorer l&apos;expérience
-                utilisateur. Les cookies sont de petits fichiers stockés sur
-                votre appareil qui permettent de mémoriser vos préférences.
-              </p>
-              <p>
-                Vous pouvez configurer votre navigateur pour refuser les cookies.
-                Cependant, certaines fonctionnalités du site pourraient ne pas
-                fonctionner correctement sans cookies.
-              </p>
-              <p>Types de cookies utilisés :</p>
-              <ul>
-                <li>
-                  <strong>Cookies essentiels :</strong> nécessaires au
-                  fonctionnement du site
-                </li>
-                <li>
-                  <strong>Cookies analytiques :</strong> permettent d&apos;analyser
-                  l&apos;utilisation du site (si applicable)
-                </li>
-              </ul>
-
-              <h2>7. Limitation de responsabilité</h2>
-              <p>
-                CD-ELEC s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des
-                informations diffusées sur ce site. Toutefois, CD-ELEC ne peut
-                garantir l&apos;exactitude, la précision ou l&apos;exhaustivité des
-                informations mises à disposition sur ce site.
-              </p>
-              <p>
-                CD-ELEC décline toute responsabilité pour toute imprécision,
-                inexactitude ou omission portant sur des informations disponibles
-                sur ce site.
-              </p>
-
-              <h2>8. Liens hypertextes</h2>
-              <p>
-                Ce site peut contenir des liens vers d&apos;autres sites. CD-ELEC
-                n&apos;exerce aucun contrôle sur ces sites et décline toute
-                responsabilité quant à leur contenu ou leur fonctionnement.
-              </p>
-
-              <h2>9. Droit applicable</h2>
-              <p>
-                Les présentes mentions légales sont régies par le droit français.
-                En cas de litige, les tribunaux français seront seuls compétents.
-              </p>
-
-              <h2>10. Contact</h2>
-              <p>
-                Pour toute question relative aux présentes mentions légales, vous
-                pouvez nous contacter :
-              </p>
-              <ul>
-                <li>
-                  Par email :{" "}
-                  <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a>
-                </li>
-                <li>
-                  Par téléphone : <a href="tel:0608274902">06 08 27 49 02</a>
-                </li>
-                <li>
-                  Par courrier : CD-ELEC, 534 Chemin de Rouquette, 81710 Saïx
-                </li>
-              </ul>
-
-              <p className="mt-8 text-sm text-neutral-500">
-                Dernière mise à jour : {new Date().toLocaleDateString("fr-FR")}
+              <p className="text-neutral-600">
+                Toute reproduction, représentation, modification, publication ou adaptation
+                de tout ou partie des éléments du site, quel que soit le moyen ou le procédé
+                utilisé, est interdite sauf autorisation écrite préalable de CD-ELEC.
               </p>
             </div>
 
-            <div className="mt-12 text-center">
+            {/* 5. Protection des données personnelles */}
+            <div>
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">
+                5. Protection des données personnelles
+              </h2>
+
+              <div className="space-y-6">
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-neutral-800">
+                    5.1 Collecte des données
+                  </h3>
+                  <p className="text-neutral-600">
+                    Les données personnelles collectées sur ce site (nom, prénom, email,
+                    téléphone, message) le sont uniquement dans le cadre de demandes de
+                    contact ou de devis.
+                  </p>
+                  <p className="mt-2 text-neutral-600">
+                    Ces données sont destinées exclusivement à CD-ELEC et ne sont en aucun
+                    cas transmises à des tiers.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-neutral-800">
+                    5.2 Durée de conservation
+                  </h3>
+                  <p className="text-neutral-600">
+                    Les données personnelles sont conservées pendant une durée maximale de
+                    3 ans à compter du dernier contact avec la personne concernée.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-neutral-800">
+                    5.3 Droits des utilisateurs
+                  </h3>
+                  <p className="mb-3 text-neutral-600">
+                    Conformément au Règlement Général sur la Protection des Données (RGPD),
+                    vous disposez des droits suivants :
+                  </p>
+                  <ul className="mb-3 list-inside list-disc space-y-1 text-neutral-600">
+                    <li>Droit d&apos;accès</li>
+                    <li>Droit de rectification</li>
+                    <li>Droit à l&apos;effacement</li>
+                    <li>Droit à la limitation du traitement</li>
+                    <li>Droit à la portabilité</li>
+                    <li>Droit d&apos;opposition</li>
+                  </ul>
+                  <p className="text-neutral-600">
+                    Pour exercer ces droits, contactez-nous par email à{" "}
+                    <a href="mailto:contact@cdelec.fr" className="text-primary hover:underline">contact@cdelec.fr</a>{" "}
+                    ou par courrier à l&apos;adresse indiquée ci-dessus.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-neutral-800">
+                    5.4 Responsable du traitement
+                  </h3>
+                  <p className="text-neutral-600">
+                    Le responsable du traitement des données personnelles est
+                    Didier Cabaret, gérant de CD-ELEC.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 6. Cookies */}
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-neutral-900">
+                6. Cookies
+              </h2>
+              <p className="mb-3 text-neutral-600">
+                Ce site peut utiliser des cookies pour améliorer l&apos;expérience utilisateur.
+              </p>
+              <p className="mb-3 text-neutral-600">
+                Les cookies sont de petits fichiers stockés sur votre appareil qui permettent
+                de mémoriser vos préférences.
+              </p>
+              <p className="mb-4 text-neutral-600">
+                Vous pouvez configurer votre navigateur pour refuser les cookies.
+                Cependant, certaines fonctionnalités du site pourraient ne pas fonctionner
+                correctement sans cookies.
+              </p>
+              <p className="mb-2 font-medium text-neutral-800">
+                Types de cookies utilisés :
+              </p>
+              <ul className="list-inside list-disc space-y-1 text-neutral-600">
+                <li>
+                  <strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site.
+                </li>
+                <li>
+                  <strong>Cookies analytiques :</strong> permettent d&apos;analyser
+                  l&apos;utilisation du site (si applicable).
+                </li>
+              </ul>
+            </div>
+
+            {/* 7. Limitation de responsabilité */}
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-neutral-900">
+                7. Limitation de responsabilité
+              </h2>
+              <p className="mb-3 text-neutral-600">
+                CD-ELEC s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des
+                informations diffusées sur ce site.
+              </p>
+              <p className="mb-3 text-neutral-600">
+                Toutefois, CD-ELEC ne peut garantir l&apos;exactitude, la précision ou
+                l&apos;exhaustivité des informations mises à disposition sur ce site.
+              </p>
+              <p className="text-neutral-600">
+                CD-ELEC décline toute responsabilité pour toute imprécision, inexactitude
+                ou omission portant sur des informations disponibles sur ce site.
+              </p>
+            </div>
+
+            {/* 8. Liens hypertextes */}
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-neutral-900">
+                8. Liens hypertextes
+              </h2>
+              <p className="text-neutral-600">
+                Ce site peut contenir des liens vers d&apos;autres sites.
+              </p>
+              <p className="mt-3 text-neutral-600">
+                CD-ELEC n&apos;exerce aucun contrôle sur ces sites et décline toute
+                responsabilité quant à leur contenu ou leur fonctionnement.
+              </p>
+            </div>
+
+            {/* 9. Droit applicable */}
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-neutral-900">
+                9. Droit applicable
+              </h2>
+              <p className="mb-3 text-neutral-600">
+                Les présentes mentions légales sont régies par le droit français.
+              </p>
+              <p className="text-neutral-600">
+                En cas de litige, les tribunaux français seront seuls compétents.
+              </p>
+            </div>
+
+            {/* 10. Contact */}
+            <div className="rounded-2xl bg-neutral-50 p-8">
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">
+                10. Contact
+              </h2>
+              <p className="mb-4 text-neutral-600">
+                Pour toute question relative aux présentes mentions légales, vous pouvez
+                nous contacter :
+              </p>
+              <div className="space-y-2 text-neutral-700">
+                <p>
+                  <strong>Email :</strong>{" "}
+                  <a href="mailto:contact@cdelec.fr" className="text-primary hover:underline">contact@cdelec.fr</a>
+                </p>
+                <p>
+                  <strong>Téléphone :</strong>{" "}
+                  <a href="tel:0608274902" className="text-primary hover:underline">06 08 27 49 02</a>
+                </p>
+                <p>
+                  <strong>Courrier :</strong> CD-ELEC, 534 Chemin de Rouquette, 81710 Saïx
+                </p>
+              </div>
+            </div>
+
+            {/* Date de mise à jour */}
+            <p className="text-center text-sm text-neutral-400">
+              Dernière mise à jour : {new Date().toLocaleDateString("fr-FR")}
+            </p>
+
+            {/* Retour accueil */}
+            <div className="text-center">
               <Link
                 href="/"
                 className="text-primary hover:text-primary-700 hover:underline"
@@ -223,6 +303,7 @@ export default function MentionsLegalesPage() {
                 &larr; Retour à l&apos;accueil
               </Link>
             </div>
+
           </div>
         </div>
       </section>
