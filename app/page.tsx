@@ -82,12 +82,12 @@ export default function Home() {
                   <MapPin className="h-4 w-4" />
                   <span>Saïx, Castres et environs (Tarn 81)</span>
                 </div>
-                <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-white shadow-lg">
+                <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full shadow-lg">
                   <Image
                     src="/images/didier_tete.png"
                     alt="Didier Cabaret - Gérant CD-ELEC"
-                    width={64}
-                    height={64}
+                    width={80}
+                    height={80}
                     className="h-full w-full object-cover"
                     priority
                     quality={85}
