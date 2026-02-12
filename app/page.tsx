@@ -81,6 +81,19 @@ export default function Home() {
                 <MapPin className="h-4 w-4" />
                 <span>Saïx, Castres et environs (Tarn 81)</span>
               </div>
+              <div className="mb-6 flex justify-center lg:justify-start">
+                <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-white shadow-xl">
+                  <Image
+                    src="/images/didier_tete.png"
+                    alt="Didier Cabaret - Gérant CD-ELEC"
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-cover"
+                    priority
+                    quality={85}
+                  />
+                </div>
+              </div>
               <h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
                 Votre électricien
                 <span className="block text-primary">de confiance</span>
@@ -125,19 +138,6 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="absolute -top-10 left-1/2 z-10 -translate-x-1/2">
-                <div className="h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-xl">
-                  <Image
-                    src="/images/didier_tete.png"
-                    alt="Didier Cabaret - Gérant CD-ELEC"
-                    width={112}
-                    height={112}
-                    className="h-full w-full object-cover"
-                    priority
-                    quality={85}
-                  />
-                </div>
-              </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-white/10 backdrop-blur-sm">
                 <Image
                   src="/images/camionnette.JPG"
