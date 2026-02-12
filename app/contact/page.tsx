@@ -194,7 +194,7 @@ export default function ContactPage() {
       </section>
 
       {/* Wave transition to footer */}
-      <WaveDivider color="#171717" flip className="bg-white" />
+      <WaveDivider color="#171717" className="bg-white" />
     </>
   );
 }
