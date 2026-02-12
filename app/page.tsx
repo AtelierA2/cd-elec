@@ -125,7 +125,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="absolute -left-24 top-1/2 z-10 -translate-y-1/2">
+              <div className="absolute -left-24 top-6 z-10">
                 <div className="h-20 w-20 overflow-hidden rounded-full shadow-lg">
                   <Image
                     src="/images/didier_tete.png"
