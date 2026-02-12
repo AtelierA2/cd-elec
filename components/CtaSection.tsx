@@ -18,8 +18,8 @@ export default function CtaSection({
 }: CtaSectionProps) {
   return (
     <>
-      <WaveDivider color="#262626" className="bg-white" />
-      <section className="bg-neutral-800">
+      <WaveDivider color="#0e172a" className="bg-white" />
+      <section className="bg-[#0e172a]">
         <div className="container-custom text-center py-16 md:py-20">
         <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
           {title}
