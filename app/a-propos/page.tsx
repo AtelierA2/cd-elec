@@ -76,7 +76,7 @@ export default function AProposPage() {
             <div>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-2 text-sm font-medium text-primary">
                 <Zap className="h-4 w-4" />
-                <span>Artisan électricien depuis 2023</span>
+                <span>Installé à Saïx depuis 2023</span>
               </div>
               <h2 className="mb-6 text-3xl font-bold text-neutral-900 md:text-4xl">
                 Didier Cabaret, votre électricien
