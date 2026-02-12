@@ -91,7 +91,7 @@ export default function Home() {
                 Tarn.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-                <Button size="lg" variant="secondary" asChild>
+                <Button size="lg" variant="secondary" className="text-white" asChild>
                   <Link href="/contact">
                     Demander un devis gratuit
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -125,6 +125,19 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
+              <div className="absolute -top-10 left-1/2 z-10 -translate-x-1/2">
+                <div className="h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-xl">
+                  <Image
+                    src="/images/didier_tete.png"
+                    alt="Didier Cabaret - Gérant CD-ELEC"
+                    width={112}
+                    height={112}
+                    className="h-full w-full object-cover"
+                    priority
+                    quality={85}
+                  />
+                </div>
+              </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-white/10 backdrop-blur-sm">
                 <Image
                   src="/images/camionnette.JPG"
