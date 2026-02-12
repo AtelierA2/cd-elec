@@ -23,7 +23,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-neutral-300">
+    <footer className="bg-neutral-800 text-neutral-300">
       <div className="container-custom section-padding">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
@@ -144,6 +144,7 @@ export default function Footer() {
               href="https://ateliera2.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Création de site web Tarn - Ateliera2"
               className="text-neutral-400 transition-colors hover:text-white"
             >
               ateliera2.com
