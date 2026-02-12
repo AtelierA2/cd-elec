@@ -55,7 +55,7 @@ export default function MentionsLegalesPage() {
                   <a href="mailto:contact@cdelec.fr" className="text-primary hover:underline">contact@cdelec.fr</a>
                 </p>
                 <p>
-                  <strong>SIRET :</strong> [Numéro SIRET à renseigner]
+                  <strong>SIRET :</strong> 903 780 583 00022
                 </p>
                 <p>
                   <strong>Code APE :</strong> 4321A — Travaux d&apos;installation électrique dans tous locaux
