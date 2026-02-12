@@ -194,29 +194,17 @@ export default function MentionsLegalesPage() {
                 6. Cookies
               </h2>
               <p className="mb-3 text-neutral-600">
-                Ce site peut utiliser des cookies pour améliorer l&apos;expérience utilisateur.
+                Ce site n&apos;utilise aucun cookie de tracking, de publicité ou d&apos;analyse
+                de votre navigation.
               </p>
               <p className="mb-3 text-neutral-600">
-                Les cookies sont de petits fichiers stockés sur votre appareil qui permettent
-                de mémoriser vos préférences.
+                Seuls des cookies strictement nécessaires au fonctionnement technique du site
+                peuvent être déposés par l&apos;hébergeur (Vercel).
+                Ces cookies ne collectent aucune donnée personnelle.
               </p>
-              <p className="mb-4 text-neutral-600">
-                Vous pouvez configurer votre navigateur pour refuser les cookies.
-                Cependant, certaines fonctionnalités du site pourraient ne pas fonctionner
-                correctement sans cookies.
+              <p className="text-neutral-600">
+                Aucune bannière de consentement n&apos;est donc requise pour la navigation sur ce site.
               </p>
-              <p className="mb-2 font-medium text-neutral-800">
-                Types de cookies utilisés :
-              </p>
-              <ul className="list-inside list-disc space-y-1 text-neutral-600">
-                <li>
-                  <strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site.
-                </li>
-                <li>
-                  <strong>Cookies analytiques :</strong> permettent d&apos;analyser
-                  l&apos;utilisation du site (si applicable).
-                </li>
-              </ul>
             </div>
 
             {/* 7. Limitation de responsabilité */}
