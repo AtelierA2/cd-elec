@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "À propos de CD-ELEC | Électricien Tarn",
     description:
-      "Didier Cabaret, artisan électricien depuis 1985. Plus de 40 ans d'expérience à Saïx et Castres.",
+      "Didier Cabaret, artisan électricien avec plus de 40 ans d'expérience à Saïx et Castres.",
   },
 };
 
@@ -66,7 +66,7 @@ export default function AProposPage() {
     <>
       <HeroSection
         title="À propos de CD-ELEC"
-        description="Votre électricien de confiance à Saïx et Castres depuis plus de 40 ans. Découvrez notre histoire et nos engagements."
+        description="Découvrez CD-ELEC, votre électricien à Saïx et Castres. Plus de 40 ans d'expérience au service de vos projets électriques."
       />
 
       {/* About Section */}
@@ -76,14 +76,14 @@ export default function AProposPage() {
             <div>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-2 text-sm font-medium text-primary">
                 <Zap className="h-4 w-4" />
-                <span>Artisan électricien depuis 2008</span>
+                <span>Artisan électricien depuis 2023</span>
               </div>
               <h2 className="mb-6 text-3xl font-bold text-neutral-900 md:text-4xl">
                 Didier Cabaret, votre électricien
               </h2>
               <div className="space-y-4 text-neutral-600">
                 <p>
-                  Installé à Saïx depuis 2008, CD-ELEC est une entreprise
+                  Installé à Saïx depuis 2023, CD-ELEC est une entreprise
                   d&apos;électricité générale dirigée par Didier Cabaret, artisan
                   électricien passionné par son métier.
                 </p>
@@ -192,22 +192,16 @@ export default function AProposPage() {
               </h2>
               <p className="mb-6 text-lg text-primary-100">
                 CD-ELEC est fier d&apos;avoir reçu le <strong className="text-white">Diplôme de l&apos;Excellence Artisanale</strong>,
-                une distinction décernée par la Chambre des Métiers et de l&apos;Artisanat du Tarn.
+                une distinction décernée par la Chambre des Métiers et de l&apos;Artisanat.
               </p>
               <p className="mb-6 text-primary-100">
                 Cette reconnaissance récompense notre engagement envers la qualité,
                 notre savoir-faire et notre contribution à l&apos;excellence artisanale
                 dans le domaine de l&apos;électricité.
               </p>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-lg bg-white/10 p-4">
-                  <p className="text-2xl font-bold">+40 ans</p>
-                  <p className="text-sm text-primary-200">d&apos;expérience</p>
-                </div>
-                <div className="rounded-lg bg-white/10 p-4">
-                  <p className="text-2xl font-bold">100%</p>
-                  <p className="text-sm text-primary-200">clients satisfaits</p>
-                </div>
+              <div className="inline-block rounded-lg bg-white/10 p-4">
+                <p className="text-2xl font-bold">+40 ans</p>
+                <p className="text-sm text-primary-200">d&apos;expérience</p>
               </div>
             </div>
           </div>
@@ -225,9 +219,9 @@ export default function AProposPage() {
                 Certifications & garanties
               </h2>
               <p className="mb-8 text-lg text-neutral-600">
-                Nous sommes un professionnel qualifié et assuré. Toutes nos
-                installations sont réalisées dans le respect des normes en
-                vigueur et bénéficient des garanties légales.
+                Professionnel qualifié et assuré, toutes nos installations
+                sont réalisées dans le respect des normes en vigueur et
+                bénéficient des garanties légales.
               </p>
               <ul className="space-y-4">
                 {certifications.map((cert) => (
@@ -268,7 +262,7 @@ export default function AProposPage() {
               Zone d&apos;intervention
             </h2>
             <p className="mb-8 text-lg text-neutral-600">
-              Basé à Saïx, j&apos;interviens dans un rayon de 30 km pour tous vos
+              Basé à Saïx, j&apos;interviens dans un rayon de 50 km pour tous vos
               travaux électriques. Que vous soyez à Castres, Mazamet,
               Labruguière ou ailleurs dans le Tarn, je me déplace chez vous.
             </p>

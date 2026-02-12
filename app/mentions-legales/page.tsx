@@ -27,7 +27,7 @@ export default function MentionsLegalesPage() {
           <div className="mx-auto max-w-3xl">
             <div className="prose prose-neutral max-w-none">
               <h2>1. Éditeur du site</h2>
-              <p>Le site cd-elec.fr est édité par :</p>
+              <p>Le site cdelec.fr est édité par :</p>
               <ul>
                 <li>
                   <strong>Raison sociale :</strong> CD-ELEC
@@ -48,7 +48,7 @@ export default function MentionsLegalesPage() {
                 </li>
                 <li>
                   <strong>Email :</strong>{" "}
-                  <a href="mailto:contact@cd-elec.fr">contact@cd-elec.fr</a>
+                  <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a>
                 </li>
                 <li>
                   <strong>SIRET :</strong> [Numéro SIRET à renseigner]
@@ -119,7 +119,7 @@ export default function MentionsLegalesPage() {
               </ul>
               <p>
                 Pour exercer ces droits, vous pouvez nous contacter par email à{" "}
-                <a href="mailto:contact@cd-elec.fr">contact@cd-elec.fr</a> ou par
+                <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a> ou par
                 courrier à l&apos;adresse indiquée ci-dessus.
               </p>
 
@@ -186,7 +186,7 @@ export default function MentionsLegalesPage() {
               <ul>
                 <li>
                   Par email :{" "}
-                  <a href="mailto:contact@cd-elec.fr">contact@cd-elec.fr</a>
+                  <a href="mailto:contact@cdelec.fr">contact@cdelec.fr</a>
                 </li>
                 <li>
                   Par téléphone : <a href="tel:0608274902">06 08 27 49 02</a>

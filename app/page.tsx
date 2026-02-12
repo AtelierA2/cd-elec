@@ -198,8 +198,8 @@ export default function Home() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 text-white shadow-xl">
-                <p className="text-3xl font-bold">100%</p>
-                <p className="text-sm text-primary-100">Satisfaction client</p>
+                <p className="text-3xl font-bold">+40 ans</p>
+                <p className="text-sm text-primary-100">d&apos;expérience</p>
               </div>
             </div>
             <div>
@@ -268,7 +268,7 @@ export default function Home() {
               Zone d&apos;intervention
             </h2>
             <p className="mb-8 text-lg text-neutral-600">
-              Nous intervenons à Saïx, Castres et dans un rayon de 30 km autour
+              Nous intervenons à Saïx, Castres et dans un rayon de 50 km autour
               pour tous vos travaux électriques.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
