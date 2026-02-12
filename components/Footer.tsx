@@ -23,7 +23,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0e172a] text-neutral-300">
+    <footer className="bg-neutral-900 text-neutral-300">
       <div className="container-custom section-padding">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
