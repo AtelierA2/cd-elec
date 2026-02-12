@@ -63,17 +63,31 @@ export default function MentionsLegalesPage() {
               <p>Ce site est hébergé par :</p>
               <ul>
                 <li>
-                  <strong>Hébergeur :</strong> [Nom de l&apos;hébergeur à renseigner]
+                  <strong>Hébergeur :</strong> Vercel Inc.
                 </li>
                 <li>
-                  <strong>Adresse :</strong> [Adresse de l&apos;hébergeur]
+                  <strong>Adresse :</strong> 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis
                 </li>
                 <li>
-                  <strong>Téléphone :</strong> [Téléphone de l&apos;hébergeur]
+                  <strong>Site web :</strong>{" "}
+                  <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">vercel.com</a>
                 </li>
               </ul>
 
-              <h2>3. Propriété intellectuelle</h2>
+              <h2>3. Conception du site</h2>
+              <p>Ce site a été conçu et réalisé par :</p>
+              <ul>
+                <li>
+                  <strong>Agence :</strong>{" "}
+                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer" title="Création de site web Tarn - Ateliera2">Atelier A2</a>
+                </li>
+                <li>
+                  <strong>Site web :</strong>{" "}
+                  <a href="https://ateliera2.com" target="_blank" rel="noopener noreferrer">ateliera2.com</a>
+                </li>
+              </ul>
+
+              <h2>4. Propriété intellectuelle</h2>
               <p>
                 L&apos;ensemble du contenu de ce site (textes, images, logos,
                 graphismes, etc.) est la propriété exclusive de CD-ELEC, sauf
@@ -86,8 +100,8 @@ export default function MentionsLegalesPage() {
                 écrite préalable de CD-ELEC.
               </p>
 
-              <h2>4. Protection des données personnelles</h2>
-              <h3>4.1 Collecte des données</h3>
+              <h2>5. Protection des données personnelles</h2>
+              <h3>5.1 Collecte des données</h3>
               <p>
                 Les données personnelles collectées sur ce site (nom, prénom,
                 email, téléphone, message) le sont uniquement dans le cadre de
@@ -96,14 +110,14 @@ export default function MentionsLegalesPage() {
                 tiers.
               </p>
 
-              <h3>4.2 Durée de conservation</h3>
+              <h3>5.2 Durée de conservation</h3>
               <p>
                 Les données personnelles sont conservées pendant une durée
                 maximale de 3 ans à compter du dernier contact avec la personne
                 concernée.
               </p>
 
-              <h3>4.3 Droits des utilisateurs</h3>
+              <h3>5.3 Droits des utilisateurs</h3>
               <p>
                 Conformément au Règlement Général sur la Protection des Données
                 (RGPD), vous disposez des droits suivants concernant vos données
@@ -123,13 +137,13 @@ export default function MentionsLegalesPage() {
                 courrier à l&apos;adresse indiquée ci-dessus.
               </p>
 
-              <h3>4.4 Responsable du traitement</h3>
+              <h3>5.4 Responsable du traitement</h3>
               <p>
                 Le responsable du traitement des données personnelles est Didier
                 Cabaret, gérant de CD-ELEC.
               </p>
 
-              <h2>5. Cookies</h2>
+              <h2>6. Cookies</h2>
               <p>
                 Ce site peut utiliser des cookies pour améliorer l&apos;expérience
                 utilisateur. Les cookies sont de petits fichiers stockés sur
@@ -152,7 +166,7 @@ export default function MentionsLegalesPage() {
                 </li>
               </ul>
 
-              <h2>6. Limitation de responsabilité</h2>
+              <h2>7. Limitation de responsabilité</h2>
               <p>
                 CD-ELEC s&apos;efforce d&apos;assurer l&apos;exactitude et la mise à jour des
                 informations diffusées sur ce site. Toutefois, CD-ELEC ne peut
@@ -165,20 +179,20 @@ export default function MentionsLegalesPage() {
                 sur ce site.
               </p>
 
-              <h2>7. Liens hypertextes</h2>
+              <h2>8. Liens hypertextes</h2>
               <p>
                 Ce site peut contenir des liens vers d&apos;autres sites. CD-ELEC
                 n&apos;exerce aucun contrôle sur ces sites et décline toute
                 responsabilité quant à leur contenu ou leur fonctionnement.
               </p>
 
-              <h2>8. Droit applicable</h2>
+              <h2>9. Droit applicable</h2>
               <p>
                 Les présentes mentions légales sont régies par le droit français.
                 En cas de litige, les tribunaux français seront seuls compétents.
               </p>
 
-              <h2>9. Contact</h2>
+              <h2>10. Contact</h2>
               <p>
                 Pour toute question relative aux présentes mentions légales, vous
                 pouvez nous contacter :
