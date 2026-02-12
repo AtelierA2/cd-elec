@@ -164,6 +164,9 @@ const projects: Project[] = [
       { src: "/images/images_tri/Intérieur particulier/Photo 506.jpg", alt: "Réalisation intérieur" },
       { src: "/images/images_tri/Intérieur particulier/Photo 594.jpg", alt: "Projet particulier" },
       { src: "/images/images_tri/Intérieur particulier/Photo 598.jpg", alt: "Installation résidentielle" },
+      { src: "/images/terrasse.JPG", alt: "Éclairage terrasse avec jacuzzi" },
+      { src: "/images/Terrasse2.jpg", alt: "Spots LED encastrés terrasse bois" },
+      { src: "/images/Terrasse3.JPG", alt: "Éclairage extérieur terrasse de nuit" },
     ],
     details: [
       "Luminaires suspendus design",
@@ -209,7 +212,6 @@ const projects: Project[] = [
       { src: "/images/images_tri/Installation electrique/Pieuvre-électrique.jpg", alt: "Pieuvre électrique installation" },
       { src: "/images/images_tri/Installation electrique/pieuvres-electriques.jpg", alt: "Pieuvres électriques câblage" },
       { src: "/images/images_tri/Installation electrique/Saignee-et-electricite-016.jpg", alt: "Saignée électrique mur" },
-      { src: "/images/images_tri/Installation electrique/Plancher chauffant 1.jpg", alt: "Installation plancher chauffant" },
       { src: "/images/images_tri/Installation electrique/Plancher chauffant 2.jpg", alt: "Plancher chauffant en cours de pose" },
       { src: "/images/images_tri/Installation electrique/Plancher chauffant 3.jpg", alt: "Câblage plancher chauffant" },
       { src: "/images/images_tri/Installation electrique/Plancher chauffant 4.jpg", alt: "Plancher chauffant détail" },
