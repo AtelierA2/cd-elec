@@ -77,17 +77,17 @@ export default function Home() {
         <div className="container-custom relative py-20 md:py-32">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-sm">
-                <MapPin className="h-4 w-4" />
-                <span>Saïx, Castres et environs (Tarn 81)</span>
-              </div>
-              <div className="mb-6 flex justify-center lg:justify-start">
-                <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-white shadow-xl">
+              <div className="mb-6 flex items-center justify-center gap-4 lg:justify-start">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-sm">
+                  <MapPin className="h-4 w-4" />
+                  <span>Saïx, Castres et environs (Tarn 81)</span>
+                </div>
+                <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-white shadow-lg">
                   <Image
                     src="/images/didier_tete.png"
                     alt="Didier Cabaret - Gérant CD-ELEC"
-                    width={96}
-                    height={96}
+                    width={64}
+                    height={64}
                     className="h-full w-full object-cover"
                     priority
                     quality={85}
